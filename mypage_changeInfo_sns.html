@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+  <div class="profile wrap">
+    <header class="title01 posi_rel">
+      <div class="backBox posi_ab">
+        <a href="javascript:;"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+      </div>
+      <div class="headBox">
+        <h1 class="pt6_17 flexCenterBox">정보수정</h1>
+      </div>
+    </header>
+
+    <div class="pageWrap">
+      <form action="/test.jsp" name="communityWriting" method="post" class="inputBox">
+        <div class="infoBox photo flexBox">
+          <div class="profile_img posi_rel">
+              <img src="./images/placeholder/img_thumnail_3.png" />
+              <div class="photo_edit posi_ab">
+                  <img src="./images/iconBox/icon_camera.png" />
+              </div>
+          </div>
+          <p class="pt4_11">프로필 이미지로 사용할 이미지를 올려주세요.<br />2M 미만의 이미지만 허용됩니다.</p>
+        </div>
+
+        <div class="infoBox">
+          <h2 class="pt5_17">간단한 소개</h2>
+          <div class="textareaBox textInput posi_rel">
+              <textarea name="report" for="report07" placeholder="">안녕하세요. 저는 토리맘 슈퍼케이예비맘 이에요. 만나서 반갑습니다. 앞으로 좋은 활동 이어나갈께요. 모두들 화이팅!!</textarea>
+              <div class="pt4_12 textCount posi_ab">128 / 200</div>
+          </div>
+          <div class="sns posi_rel">
+            <input type="text" placeholder="" value="www.instagram.com/supertorymom" class="pt4_15 input01">
+            <img class="posi_ab" src="./images/snsBox/icon_sns_insta_2.png" alt="instagram icon">
+          </div>
+          <p class="pt4_11">https://www.instagram.com/xxxx 형식의 <br />나의 인스타그램 주소를 입력해주세요</p>
+        </div>
+
+        <div class="infoBox sns">
+          <h2 class="pt5_17">SNS 연동</h2>
+          <p class="pt4_15">카카오로 로그인 사용중입니다</p>
+          <div class="sns_icon flexBox">
+            <img src="./images/snsBox/icon_sns_kakaotalk_l.png" />
+            <img src="./images/snsBox/icon_sns_naver_l_dim.png" />
+            <img src="./images/snsBox/icon_sns_google_l_dim.png" />
+            <img src="./images/snsBox/icon_sns_apple_l_dim.png" />
+          </div>
+        </div>
+
+        <div class="infoBox">
+          <h2 class="pt5_17">아이디</h2>
+          <input type="text" placeholder="mentory@gmail.com" class="pt4_15 input01">
+        </div>
+
+        <div class="infoBox password">
+          <h2 class="pt5_17">비밀번호</h2>
+          <input type="text" placeholder="변경할 비밀번호" class="pt4_15 input01">
+          <input type="text" placeholder="변경할 비밀번호 재입력" class="pt4_15 input01">
+        </div>
+
+        <div class="infoBox">
+          <h2 class="pt5_17">이름</h2>
+          <input type="text" placeholder="" value="김민정" class="pt4_15 input01">
+        </div>
+
+        <div class="infoBox nickname">
+          <h2 class="pt5_17">닉네임</h2>
+          <div class="info_btn posi_rel">
+            <input type="text" placeholder="" value="슈퍼케이예비맘" class="pt4_15 input01">
+            <button class="mty_button01 pt4_12 posi_ab">중복확인</button>
+          </div>
+          <p class="pt4_11">2-10자이내의 숫자나 한글, 영문으로 입력해주세요<br />'피드'나 '커뮤니티'에 글 작성하면 '작성자'에 닉네임이 표기됩니다.</p>
+        </div>
+
+        <div class="infoBox number">
+          <h2 class="pt5_17">휴대폰번호</h2>
+          <div class="info_btn posi_rel">
+            <input type="text" placeholder="" value="01012345678" class="pt4_15 input01">
+            <button class="mty_button01 pt4_12 posi_ab">수정</button>
+          </div>
+          <p class="pt4_11">수정할 휴대폰번호로 수정후 '수정'버튼을 탭해주세요.</p>
+        </div>
+
+        <div class="infoBox">
+          <h2 class="pt5_17">성별</h2>
+          <ul>
+            <li>
+              <input type="radio" name="report" id="report01" class="radioBox">
+              <label for="report01" class="pt4_14">여자</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report02" class="radioBox" checked>
+              <label for="report02" class="pt4_14">남자</label>
+            </li>
+          </ul>
+        </div>
+
+        <button type="submit" class="mty_button02 pt6_16">수정</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

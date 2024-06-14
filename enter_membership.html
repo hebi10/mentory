@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+  <div class="wrap enter_membership">
+
+    <header class="title01 posi_rel">
+      <div class="backBox posi_ab">
+        <a href="javascript:history.back();"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+      </div>
+      <div class="headBox">
+        <h1 class="pt6_17 flexCenterBox">회원가입</h1>
+      </div>
+    </header>
+
+    <div class="pageWrap">
+
+      <div class="question01 open">
+        <strong class="pt7_28">
+          반갑습니다!<br>
+          <em class="pt7_28">멘토리</em>입니다.
+        </strong>
+        <p class="pt5_14">
+          현재 고객님의 상태를 알려주시면<br>
+          맞춤멘토가 도와드릴게요.
+        </p>
+        <div class="flexBox">
+          <ul class="listActBox1 checkBox">
+            <li class="pt6_16 flexCenterBox">임신 중이예요</li>
+            <li class="pt6_16 flexCenterBox">육아 중이예요</li>
+            <li class="pt6_16 flexCenterBox">임신 준비 중이예요</li>
+          </ul>
+        </div>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+      <div class="question02">
+        <p>
+          그러시군요! 그럼<br>
+          고객님에 대해서 조금 더 여쭤볼게요.
+        </p>
+        <strong class="pt7_28">
+          고객님은<br>
+          어떤 분이신가요?
+        </strong>
+        <div class="flexBox">
+          <ul class="checkBox listActBox2">
+            <li class="pt6_16 flexCenterBox">예비 엄마예요</li>
+            <li class="pt6_16 flexCenterBox">예비 아빠예요</li>
+          </ul>
+        </div>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+      <div class="question03">
+        <strong class="pt7_28">
+          아기 <em class="pt7_28">태명</em> 또는 <em class="pt7_28">이름</em>은<br>
+          어떻게 되나요?
+        </strong>
+        <div class="inputBox flexBox">
+          <input type="text" class="pt4_15" placeholder="입력해주세요.">
+        </div>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+      <div class="question04">
+        <strong class="pt7_28">
+          <i class="pt7_28">김자두</i> 맘님의<br>
+          <em class="pt7_28">출산 예정일</em>을 입력해 주세요.
+        </strong>
+        <div class="inputBox flexBox">
+          <input type="date" class="pt4_15" placeholder="입력해주세요.">
+        </div>
+        <em class="pt4_12">
+          2-10자이내의 숫자나 한글, 영문으로 입력해주세요.
+          ‘피드’나 ‘커뮤니티’에서 게시글을 작성하면 해당 닉네임으로 표기됩니다.
+        </em>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+      <div class="question05">
+        <strong class="pt7_28">
+          활동시 사용할<br>
+          <em class="pt7_28">닉네임</em>을 적어주세요.
+        </strong>
+        <div class="inputBox flexBox">
+          <input type="text" class="pt4_15" placeholder="입력해주세요.">
+          <button>중복확인</button>
+        </div>
+        <em class="pt4_12">
+          2-10자이내의 숫자나 한글, 영문으로 입력해주세요.
+          ‘피드’나 ‘커뮤니티’에서 게시글을 작성하면 해당 닉네임으로 표기됩니다.
+        </em>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+      <div class="question06">
+        <strong class="pt7_28">
+          <em class="pt7_28">아이 이름</em>은<br>
+          어떻게 되나요?
+        </strong>
+        <div class="inputBox flexBox">
+          <input type="text" class="pt4_15" placeholder="입력해주세요.">
+        </div>
+        <button class="pt5_15 flexCenterBox nextBtn">다음</button>
+      </div>
+
+    </div>
+
+    <form action="/test.jsp" name="communityWriting" method="post">
+      <input type="hidden" name="question01">
+      <input type="hidden" name="question02">
+      <input type="hidden" name="question03">
+      <input type="hidden" name="question04">
+      <input type="hidden" name="question05">
+
+      <input type="hidden" name="question06">
+      <input type="hidden" name="question07">
+      <input type="hidden" name="question08">
+    </form>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+  <div class="wrap modulepage">
+
+    <div>
+      <strong class="test">클릭시 최대 가로값이 바뀝니다</strong>
+      <ul class="sizeControl" style="padding-bottom: 10px;">
+        <li><button>375px</button></li>
+        <li><button>1280px</button></li>
+      </ul>
+    </div>
+
+    <div class="commentListBox">
+    <div class="commentListBox">
+      <strong class="test">댓글</strong>
+
+      <div class="commentBox onList commentSection">
+        <p class="noneTitle flexBox">등록된 댓글이 없습니다.</p>
+
+        <span style="display: block; margin-bottom: 20px;">댓글 달기</span>
+        <span style="display: block; margin-bottom: 20px;">답글 달기</span>
+
+        <ul class="pt4_14 tagList">
+
+          <li>
+            <figure class="post_information post_information2">
+              <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+              <figcaption>
+                <dl>
+                  <dt class="flexBox">
+                    <p class="pt6_11">슈퍼동글동글이</p>
+                    <p class="pt4_11">2024.03.30</p>
+                  </dt>
+                  <dd>
+                    <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                  </dd>
+                  <dd class="flexBox informationBox">
+                    <p class="pt6_11">답글 달기</p>
+                    <p class="pt6_11">답글 <span class="pt6_11"> 999</span></p>
+                    <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                  </dd>
+                </dl>
+                <div class="headleCommit">
+                  <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                </div>
+
+                <!-- more 버튼 클릭 시 -->
+                <div class="openMore activeBox">
+                  <ul class="userOthers pointerCursor">
+                    <li class="pt5_15 reportBtn">글 신고하기</li>
+                    <li class="pt5_15 cancel">취소</li>
+                  </ul>
+            
+                  <ul class="userMy pointerCursor">
+                    <li class="pt5_15 modifyBtn">수정하기</li>
+                    <li class="pt5_15 deleteBtn">삭제하기</li>
+                    <li class="pt5_15 cancel">취소</li>
+                  </ul>
+                </div>
+                
+              </figcaption>
+            </figure>
+
+            <ol class="replyList01">
+              <li>
+                <figure class="post_information post_information2">
+                  <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                  <figcaption>
+                    <dl>
+                      <dt class="flexBox">
+                        <p class="pt6_11">슈퍼동글동글이</p>
+                        <p class="pt4_11">2024.03.30</p>
+                      </dt>
+                      <dd>
+                        <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                      </dd>
+                      <dd class="flexBox informationBox">
+                        <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                      </dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <figure class="post_information post_information2">
+              <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+              <figcaption>
+                <dl>
+                  <dt class="flexBox">
+                    <p class="pt6_11">슈퍼동글동글이</p>
+                    <p class="pt4_11">2024.03.30</p>
+                  </dt>
+                  <dd>
+                    <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                  </dd>
+                  <dd class="flexBox informationBox">
+                    <p class="pt6_11">답글 달기</p>
+                    <p class="pt6_11">답글 <span class="pt6_11"> 999</span></p>
+                    <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                  </dd>
+                </dl>
+              </figcaption>
+            </figure>
+          </li>
+          
+        </ul>
+      <section class="commentSection">
+        <div class="headBox flexBox">
+          <h3 class="pt5_15 flexBox">댓글 <strong class="pt5_15">0</strong></h3>
+          <div class="flexBox pointerCursor commentOpen03">
+            <img src="images/iconBox/icon_etc_write.png" alt="댓글 작성 아이콘">
+            <p class="pt4_14">댓글 작성</p>
+          </div>
+        </div>
+  
+        <div class="commentBoxWrap">
+          <div class="commentBox onList commentSection">
+            <p class="noneTitle flexBox">등록된 댓글이 없습니다.</p>
+    
+            <ul class="pt4_14 tagList commentWrap">
+    
+              <!-- myPost, list로 컨트롤 -->
+              <li>
+                <figure class="post_information post_information1 post_information2">
+                  <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                  <figcaption>
+                    <dl>
+                      <dt class="flexBox">
+                        <p class="pt6_11">슈퍼동글동글이</p>
+                        <p class="pt4_11">2024.03.30</p>
+                      </dt>
+                      <dd>
+                        <p class="pt4_14 textBox1">내가 작성한 글 유익하게 도움이 많이 되는 강의였습니다.</p>
+                      </dd>
+                      <dd class="flexBox informationBox">
+                        <p class="pt6_11 openCommentBox">답글 달기</p>
+                        <p class="pt6_11 commentOpen">답글 <span class="pt6_11"> 999</span></p>
+                        <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                      </dd>
+                    </dl>
+                    <div class="headleCommit">
+                      <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                    </div>
+    
+                    <!-- more 버튼 클릭 시 -->
+                    <div class="commitOpenMore activeBox">
+                      <ul class="userOthers pointerCursor">
+                        <li class="pt5_15 reportBtn">글 신고하기</li>
+                        <li class="pt5_15 cancel">취소</li>
+                      </ul>
+                
+                      <ul class="userMy pointerCursor">
+                        <li class="pt5_15 modifyBtn">수정하기</li>
+                        <li class="pt5_15 deleteBtn">삭제하기</li>
+                        <li class="pt5_15 cancel">취소</li>
+                      </ul>
+                    </div>
+                    
+                  </figcaption>
+                </figure>
+    
+                <ol class="replyList01">
+    
+                  <li>
+                    <figure class="post_information post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </li>
+    
+                </ol>
+    
+              </li>
+              <li class="myPost">
+                <figure class="post_information post_information1 post_information2">
+                  <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                  <figcaption>
+                    <dl>
+                      <dt class="flexBox">
+                        <p class="pt6_11">슈퍼동글동글이</p>
+                        <p class="pt4_11">2024.03.30</p>
+                      </dt>
+                      <dd>
+                        <p class="pt4_14 textBox1">내가 작성한 글 유익하게 도움이 많이 되는 강의였습니다.</p>
+                      </dd>
+                      <dd class="flexBox informationBox">
+                        <p class="pt6_11 openCommentBox">답글 달기</p>
+                        <p class="pt6_11 commentOpen">답글 <span class="pt6_11"> 999</span></p>
+                        <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                      </dd>
+                    </dl>
+                    <div class="headleCommit">
+                      <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                    </div>
+    
+                    <!-- more 버튼 클릭 시 -->
+                    <div class="commitOpenMore activeBox">
+                      <ul class="userOthers pointerCursor">
+                        <li class="pt5_15 reportBtn">글 신고하기</li>
+                        <li class="pt5_15 cancel">취소</li>
+                      </ul>
+                
+                      <ul class="userMy pointerCursor">
+                        <li class="pt5_15 modifyBtn">수정하기</li>
+                        <li class="pt5_15 deleteBtn">삭제하기</li>
+                        <li class="pt5_15 cancel">취소</li>
+                      </ul>
+                    </div>
+                    
+                  </figcaption>
+                </figure>
+    
+                <ol class="replyList01">
+    
+                  <li>
+                    <figure class="post_information post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </li>
+    
+                </ol>
+    
+              </li>
+              
+            </ul>
+          </div>
+    
+          <div class="commentBgBox commentBox activeBox">
+            <div class="commentListWrap">
+    
+              <div class="headWrap01 flexBox">
+                <p class="pt6_17">댓글 <em class="pt6_17 color_mg">999</em></p>
+                <img src="images/iconBox/icon_top_close.png" alt="닫기 버튼" class="closeBtn">
+              </div>
+    
+              <div class="headWrap02 title01 posi_rel">
+                <div class="closeBtn01 searchBox posi_ab">
+                  <a href="javascript:;"><img src="images/arrowBox/right_m=left_m.png" alt="닫기 아이콘"></a>
+                </div>
+                <div class="headBox">
+                  <p class="pt6_17 flexBox">댓글</p>
+                </div>
+                <div class="moreBox posi_ab pointerCursor">
+                  <img src="images/iconBox/icon_top_close.png" alt="닫기 버튼" class="closeBtn">
+                </div>
+              </div>
+      
+              <ul class="pt4_14 tagList commentList">
+    
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다..</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                            <div class="headleCommit">
+                              <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                            </div>
+        
+                            <!-- more 버튼 클릭 시 -->
+                            <div class="commitOpenMore activeBox">
+                              <ul class="userOthers pointerCursor">
+                                <li class="pt5_15 reportBtn">글 신고하기</li>
+                                <li class="pt5_15 cancel">취소</li>
+                              </ul>
+                        
+                              <ul class="userMy pointerCursor">
+                                <li class="pt5_15 modifyBtn">수정하기</li>
+                                <li class="pt5_15 deleteBtn">삭제하기</li>
+                                <li class="pt5_15 cancel">취소</li>
+                              </ul>
+                            </div>
+
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  <li>
+                    <figure class="post_information post_information1 post_information2">
+                      <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                      <figcaption>
+                        <dl>
+                          <dt class="flexBox">
+                            <p class="pt6_11">슈퍼동글동글이</p>
+                            <p class="pt4_11">2024.03.30</p>
+                          </dt>
+                          <dd>
+                            <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                          </dd>
+                          <dd class="flexBox informationBox">
+                            <p class="pt6_11">답글 달기</p>
+                            <p class="pt6_11 commentOpen02">답글 <span class="pt6_11"> 999</span></p>
+                            <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                          </dd>
+                        </dl>
+                        <div class="headleCommit">
+                          <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                        </div>
+    
+                        <!-- more 버튼 클릭 시 -->
+                        <div class="commitOpenMore activeBox">
+                          <ul class="userOthers pointerCursor">
+                            <li class="pt5_15 reportBtn">글 신고하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                    
+                          <ul class="userMy pointerCursor">
+                            <li class="pt5_15 modifyBtn">수정하기</li>
+                            <li class="pt5_15 deleteBtn">삭제하기</li>
+                            <li class="pt5_15 cancel">취소</li>
+                          </ul>
+                        </div>
+                        
+                      </figcaption>
+                    </figure>
+    
+                    <ol class="replyList01">
+    
+                      <li>
+                        <figure class="post_information post_information2">
+                          <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                          <figcaption>
+                            <dl>
+                              <dt class="flexBox">
+                                <p class="pt6_11">슈퍼동글동글이</p>
+                                <p class="pt4_11">2024.03.30</p>
+                              </dt>
+                              <dd>
+                                <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                              </dd>
+                              <dd class="flexBox informationBox">
+                                <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                              </dd>
+                            </dl>
+                          </figcaption>
+                        </figure>
+                      </li>
+    
+                    </ol>
+    
+                  </li>
+                  
+              </ul>
+    
+              <ol class="pt4_14 tagList replyList01">
+    
+                <li class="myPost list">
+                  <figure class="post_information post_information1 post_information2">
+                    <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                    <figcaption>
+                      <dl>
+                        <dt class="flexBox">
+                          <p class="pt6_11">슈퍼동글동글이</p>
+                          <p class="pt4_11">2024.03.30</p>
+                        </dt>
+                        <dd>
+                          <p class="pt4_14 textBox1">내가 작성한 글 유익하게 도움이 많이 되는 강의였습니다.</p>
+                        </dd>
+                        <dd class="flexBox informationBox">
+                          <p class="pt6_11 openCommentBox">답글 달기</p>
+                          <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                        </dd>
+                      </dl>
+                      <div class="headleCommit">
+                        <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                      </div>
+      
+                      <!-- more 버튼 클릭 시 -->
+                      <div class="commitOpenMore activeBox">
+                        <ul class="userOthers pointerCursor">
+                          <li class="pt5_15 reportBtn">글 신고하기</li>
+                          <li class="pt5_15 cancel">취소</li>
+                        </ul>
+                  
+                        <ul class="userMy pointerCursor">
+                          <li class="pt5_15 modifyBtn">수정하기</li>
+                          <li class="pt5_15 deleteBtn">삭제하기</li>
+                          <li class="pt5_15 cancel">취소</li>
+                        </ul>
+                      </div>
+                      
+                    </figcaption>
+                  </figure>
+      
+                  <ol class="replyList01">
+      
+                    <li>
+                      <figure class="post_information post_information2">
+                        <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                        <figcaption>
+                          <dl>
+                            <dt class="flexBox">
+                              <p class="pt6_11">슈퍼동글동글이</p>
+                              <p class="pt4_11">2024.03.30</p>
+                            </dt>
+                            <dd>
+                              <p class="pt4_14 textBox1">유익하게 도움이 많이 되는 강의였습니다.</p>
+                            </dd>
+                            <dd class="flexBox informationBox">
+                              <p class="pt6_11">좋아요 <span class="pt6_11"> 999</span></p>
+                            </dd>
+                          </dl>
+                          <div class="headleCommit">
+                            <img src="images/iconBox/icon_top_report.png" alt="더보기 버튼">
+                          </div>
+      
+                          <!-- more 버튼 클릭 시 -->
+                          <div class="commitOpenMore activeBox">
+                            <ul class="userOthers pointerCursor">
+                              <li class="pt5_15 reportBtn">글 신고하기</li>
+                              <li class="pt5_15 cancel">취소</li>
+                            </ul>
+                      
+                            <ul class="userMy pointerCursor">
+                              <li class="pt5_15 modifyBtn">수정하기</li>
+                              <li class="pt5_15 deleteBtn">삭제하기</li>
+                              <li class="pt5_15 cancel">취소</li>
+                            </ul>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </li>
+      
+                  </ol>
+      
+                </li>
+    
+              </ol>
+      
+              <div class="commentInputBox flexCenterBox">
+                <img src="images/placeholder/img_thumnail_1.png" alt="작성자 이미지">
+                <input type="text" placeholder="댓글을 입력해 주세요" class="pt4_14 input01">
+                <button><img src="images/iconBox/icon_etc_input.png" alt="댓글 입력"></button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="report">
+      <strong class="test">신고하기</strong>
+
+      <div class="reportWrap activeBox">
+        <h3 class="pt6_17 title02 posi_rel">
+          <strong class="pt6_17">신고 사유를 선택해 주세요.</strong>
+          <div class="closeBox posi_ab">
+            <img class="btn_close pointerCursor" src="images/iconBox/btn_close.png" alt="닫기 아이콘">
+          </div>
+        </h3>
+        <form action="/test.jsp" name="communityWriting" method="post">
+          <ul>
+            <li>
+              <input type="radio" name="report" id="report01">
+              <label for="report01" class="pt4_14">중복/ 도배성 게시글 이예요</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report02">
+              <label for="report02" class="pt4_14">광고/ 홍보글이예요</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report03">
+              <label for="report03" class="pt4_14">부적절한 글이예요</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report04">
+              <label for="report04" class="pt4_14">욕설/비하/혐오가 포함된 글이예요</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report05">
+              <label for="report05" class="pt4_14">분쟁유발</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report06">
+              <label for="report06" class="pt4_14">개인정보/저작권 침해</label>
+            </li>
+            <li>
+              <input type="radio" name="report" id="report07" checked>
+              <label for="report07" class="pt4_14">기타</label>
+              <div class="textareaBox posi_rel">
+                <textarea class="textInput" name="report" for="report07" placeholder="기타 사유 내용을 입력해주세요"></textarea>
+                <div class="pt4_12 textCount posi_ab">0 / 200 자</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mty_mix_button01 btnWrap">
+            <a href="javascript:history.back();" class="pt6_16 cancel">취소</a>
+            <button class="pt6_16">제출하기</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="commentBgBox activeBox">
+        <div class="commentListWrap">
+          <div class="headWrap">
+            <p>댓글 <em>999</em></p>
+            <img src="images/iconBox/icon_top_close.png" alt="닫기 버튼" class="closeBtn">
+          </div>
+        </div>
+
+        <ul class="commentList">
+
+        </ul>
+
+        <ul class="replyList02">
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="input">
+      <strong class="test">입력 요소</strong>
+      
+      <input type="text" placeholder="이름을 입력해 주세요" class="pt4_15 input01">
+      
+      <input type="text" placeholder="이름을 입력해 주세요" class="pt4_15 input01">
+
+      <div class="writingWrap posi_rel">
+        <h2 class="pt4_12 pointerCursor">게시판 선택</h2>
+        <ul class="pointerCursor posi_ab">
+          <li>전체 베동 <img src="images/arrowBox/icon_arrow.png" alt="화살표"></li>
+          <li>전체 베동</li>
+          <li>인기글</li>
+          <li>2023 2월 베동</li>
+          <li>슈퍼마더케이 서포터즈 7기</li>
+        </ul>
+      </div>
+    
+      <div class="textInput02 textareaBox posi_rel">
+        <textarea class="textInput" name="report" for="report07" placeholder="기타 사유 내용을 입력해주세요"></textarea>
+        <div class="pt4_12 textCount posi_ab">0 / 200 자</div>
+      </div>
+
+    </div>
+
+    <div class="popup">
+      <strong class="test">팝업 창</strong>
+
+      <ul class="btnBox">
+        <li class="popup_open01">확인/닫기 팝업</li>
+        <li class="popup_open02">확인 팝업</li>
+        <li class="popup_open03">장바구니 팝업</li>
+      </ul>
+
+      <div class="alertWrap editWrap">
+
+        <div class="editBox popup01 active01">
+          <p class="pt4_15">게시물을 수정하시겠습니까?</p>
+          
+          <a href="javascript:;" class="posicancel01 cancel cancel01">
+            <img src="images/iconBox/icon_etc_close_3.png" alt="cancel">
+          </a>
+          <div class="mty_mix_button02 btnWrap">
+            <a href="javascript:;" class="pt6_16 cancel cancel01">취소</a>
+            <button class="pt6_16 check01">제출하기</button>
+          </div>
+        </div>
+
+        <div class="editBox popup01_1 active02">
+          <p class="pt4_15">게시물이 수정되었습니다</p>
+
+          <div class="btnWrap">
+            <button class="pt5_14 pointerCursor">확인</button>
+          </div>
+        </div>
+
+        <div class="editBox popup02">
+          <p class="pt4_15">게시물을 수정하시겠습니까?</p>
+  
+          <a href="javascript:;" class="posicancel02 cancel cancel02">
+            <img src="images/iconBox/icon_etc_close_3.png" alt="cancel">
+          </a>
+          <div class="btnWrap">
+            <button class="pt5_14 pointerCursor">확인</button>
+          </div>
+        </div>
+
+        <div class="editBox popup03">
+  
+          <div class="headBox flexBox">
+            <strong class="pt6_16">장바구니 담기</strong>
+            <a href="javascript:;" class="posicancel03 cancel cancel03">
+              <img src="images/iconBox/icon_top_close.png" alt="cancel">
+            </a>
+          </div>
+
+          <p class="pt4_15">
+            선택하신 상품이 장바구니에 담겼습니다.<br>
+            장바구니로 이동하시겠습니까?
+          </p>
+  
+          <div class="mty_mix_button01 btnWrap">
+            <a href="javascript:;" class="pt6_16 cancel cancel03">쇼핑 계속하기</a>
+            <button class="pt6_16 check01">장바구니 가기</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="popup_oneday activeBox act">
+        <div class="popupInformation">
+
+          <div class="swiper popupSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:;">
+                  <img src="images/placeholder/Banner_img.png" alt="임시이미지">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;">
+                  <img src="images/placeholder/Banner_img.png" alt="임시이미지">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;">
+                  <img src="images/placeholder/Banner_img.png" alt="임시이미지">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;">
+                  <img src="images/placeholder/Banner_img.png" alt="임시이미지">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;">
+                  <img src="images/placeholder/Banner_img.png" alt="임시이미지">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="closeBox flexCenterBox">
+            <button class="pt4_14 btn_today_close" type="button">오늘 하루 그만보기</button>
+            <button class="pt4_14 btn_close" type="button">닫기</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+</body>
+</html>

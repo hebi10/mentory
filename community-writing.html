@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+  <div class="wrap communityWritingWrap">
+
+    <header class="posi_rel title01">
+      <div class="headBox">
+        <h1 class="pt6_17 flexCenterBox">글쓰기</h1>
+      </div>
+      <div class="pageBackBox posi_ab">
+        <a href="javascript:history.back();"><img src="images/iconBox/btn_close.png" alt="닫기 아이콘"></a>
+      </div>
+    </header>
+
+    <div class="pageWrap">
+      <div class="writingWrap posi_rel">
+        <h2 class="pt4_12 pointerCursor">게시판 선택</h2>
+        <ul class="pointerCursor posi_ab">
+          <li>전체 베동 <img src="images/arrowBox/icon_arrow.png" alt="화살표"></li>
+          <li>전체 베동</li>
+          <li>인기글</li>
+          <li>2023 2월 베동</li>
+          <li>슈퍼마더케이 서포터즈 7기</li>
+        </ul>
+      </div>
+
+      <form action="/test.jsp" name="communityWriting" method="post">
+          <input type="hidden" name="notice-board" value="전체 베동">
+
+          <legend class="pt4_12">제목 / 내용</legend>
+          <input type="text" class="pt4_15 titleInput" placeholder="제목을 입력해주세요.">
+          <div class="textBox posi_rel">
+            <textarea class="pt4_15 textInput" placeholder="함께 하고 싶은 내용을 입력해주세요."></textarea>
+            <div class="pt4_12 textCount posi_ab">0 / 1,000 자</div>
+          </div>
+
+          <div class="imgFileBox">
+            <legend class="pt4_12">사진첨부</legend>
+            <div class="form_input_file_wrap">
+              <input class="form_input_file" id="upload1" type="file" onchange="addFile(this);" multiple>
+              <label class="form_label_file" for="upload1"><img src="images/iconBox/input_img.png" alt=""></label>
+              <div class="fileSwiper">
+                <div class="file-list swiper-wrapper"></div>
+              </div>
+            </div>
+          </div>
+          
+          <legend class="pt4_12">태그</legend>
+          <input type="text" placeholder="#을 이용해 태그를 입력해보세요!" name="tagList" class="pt4_15 tagInput">
+
+          <div class="mty_mix_button02 btnWrap">
+            <a href="javascript:history.back();" class="pt6_16">닫기</a>
+            <button class="pt6_16">등록하기</button>
+          </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+    <div class="apply wrap">
+        <header class="title01 posi_rel">
+            <div class="backBox posi_ab">
+            <a href="javascript:;"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+            </div>
+            <div class="headBox">
+            <h1 class="pt6_17 flexCenterBox">나의 스크랩북</h1>
+            </div>
+        </header>
+        <div class="scrap pageWrap">
+            <div class="textSlide">
+                <div class="swiper topSwiper">
+                  <ul class="swiper-wrapper listActBox1 tabs">
+                    <li class="swiper-slide act tab-link current" data-tab="tab-1">나의 좋아요</li>
+                    <li class="swiper-slide tab-link" data-tab="tab-2">보관함</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="listActive01">
+                <ul class="listActBox flexBox">
+                  <li class="pt5_14 act"><p>멘토</p></li>
+                  <li class="pt5_14"><p>강의</p></li>
+                  <li class="pt5_14"><p>체험</p></li>
+                  <li class="pt5_14"><p>큐레이션</p></li>
+                  <li class="pt5_14"><p>게시물</p></li>
+                </ul>
+            </div>
+            <div class="myScrap tab-content current empty" id="tab-1">
+                <img src="./images/iconBox/icon_noneTitle.png" alt="no contents" />
+                <p class="empty pt4_14">'나의 좋아요'가 없어요</p>
+            </div>
+            <div class="myScrap tab-content empty" id="tab-2">
+                <img src="./images/iconBox/icon_noneTitle.png" alt="no contents" />
+                <p class="empty pt4_14">'보관함'이 비어있어요</p>
+            </div>
+        </div> 
+    
+    </div>
+</body>
+</html>

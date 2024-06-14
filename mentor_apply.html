@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+
+  <header class="posi_rel header_mentor_detail title01">
+    <div class="headBox">
+      <h1 class="pt6_17 flexCenterBox">체험 신청</h1>
+    </div>
+    <div class="moreBox posi_ab pointerCursor">
+      <a href="javascript:history.back();"><img src="images/iconBox/btn_close.png" alt="닫기 아이콘"></a>
+    </div>
+  </header>
+
+  <div class="wrap mentor_apply">
+
+    <div class="pageWrap">
+      <div class="textBox">
+        <strong class="pt6_16">[강의] 친환경 젖병 소독하기</strong>
+        <p class="pt4_14">내용 1줄을 노출합니다. 내용 1줄을 노출 내용 1줄을 노출</p>
+      </div>
+
+      <form action="">
+        <fieldset class="first">
+          <legend class="pt6_17">1. 신청자 정보</legend>
+          <ul>
+            <li>
+              <label class="pt4_12">이름</label>
+              <input type="text" class="pt4_15 input01">
+            </li>
+            <li>
+              <label class="pt4_12">휴대폰 번호</label>
+              <input type="text" class="pt4_15 input01">
+            </li>
+            <li>
+              <label class="pt4_12">주소</label>
+              <div class="houseAddress">
+                <input type="text" class="pt4_15 input01">
+                <button type="button" class="pt4_12">우편번호</button>
+              </div>
+              <input type="text" class="pt4_15 input01">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="snsBox">
+          <legend class="pt6_17">2. 리뷰 채널 정보</legend>
+          <ul>
+            <li>
+              <img src="images/snsBox/icon_sns_blog_s.png" alt="">
+              <input type="text" class="pt4_15 input01" placeholder="블로그 주소 입력">
+            </li>
+            <li>
+              <img src="images/snsBox/icon_sns_insta_s.png" alt="">
+              <input type="text" class="pt4_15 input01" placeholder="인스타그램 주소 입력">
+            </li>
+            <li>
+              <img src="images/snsBox/icon_sns_youtube_s.png" alt="">
+              <input type="text" class="pt4_15 input01" placeholder="유투브 주소 입력">
+            </li>
+            <li>
+              <img src="images/snsBox/icon_sns_twitter_s.png" alt="">
+              <input type="text" class="pt4_15 input01" placeholder="트위터 주소 입력">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend class="pt6_17">3. 신청 댓글</legend>
+
+          <input type="text" class="pt4_15 input01" placeholder="댓글을 입력해주세요">
+        </fieldset>
+
+        <fieldset class="checkBox">
+          <p class="pt4_14">
+            체험형 이벤트 및 개인정보 취급방침 약관에 동의하고
+            작성하신 위 신청 정보로 ‘[강의] 친환경 젖병 소독하기’ 
+            체험을 신청합니다.
+          </p>
+          <ul class="inputBox">
+            <li class="flexBox">
+              <input type="checkbox" name="report" id="report01" class="checkboxBox1">
+              <label for="report01" class="pt4_14">[필수] 체험형 이벤트 약관 동의</label>
+              <img src="images/arrowBox/right_s.png" alt="동의 내용 보러가기">
+            </li>
+            <li class="flexBox">
+              <input type="checkbox" name="report" id="report02" class="checkboxBox1">
+              <label for="report02" class="pt4_14">[필수] 개인정보 수집 및 이용 동의</label>
+              <img src="images/arrowBox/right_s.png" alt="동의 내용 보러가기">
+            </li>
+          </ul>
+
+        </fieldset>
+          
+        <div class="mty_mix_button02 btnWrap">
+          <a href="javascript:;" class="pt6_16 cancel">취소</a>
+          <button class="pt6_16">제출하기</button>
+        </div>
+
+      </form>
+    </div>
+    
+  </div>
+
+</body>
+</html>

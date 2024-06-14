@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+
+  <button class="goTopBtn">
+    <img src="images/iconBox/btn_top_nor.png" alt="go top Btn">
+  </button>
+
+  <div class="wrap modulepage">
+
+    <div>
+      <strong class="test">클릭시 최대 가로값이 바뀝니다</strong>
+      <ul class="sizeControl" style="padding-bottom: 10px;">
+        <li><button>375px</button></li>
+        <li><button>1280px</button></li>
+      </ul>
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+      <strong class="test">상단</strong>
+
+      <header class="title01 posi_rel">
+        <div class="searchBox posi_ab">
+          <a href="javascript:;"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+        </div>
+        <div class="headBox">
+          <h1 class="pt6_17 flexCenterBox">게시물</h1>
+        </div>
+        <div class="moreBox posi_ab pointerCursor">
+          <img src="images/iconBox/btn_report.png" alt="기타 아이콘">
+        </div>
+      </header>
+
+      <header class="title01 posi_rel">
+        <div class="backBox posi_ab">
+          <a href="javascript:;"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+        </div>
+        <div class="headBox">
+          <h1 class="pt6_17 flexCenterBox">게시물</h1>
+        </div>
+      </header>
+
+      <h3 class="pt6_17 title02 posi_rel">
+        <strong class="pt6_17">신고 사유를 선택해 주세요.</strong>
+        <div class="closeBox posi_ab">
+          <img class="btn_close pointerCursor" src="images/iconBox/btn_close.png" alt="닫기 아이콘">
+        </div>
+      </h3>
+
+      <div class="title03">
+
+      </div>
+
+      <header class="titleLarge flexBox">
+        <h2 class="pt6_17">라지 타이틀</h2>
+      </header>
+
+      <header class="titleMedium flexBox">
+        <h2 class="pt5_15">미디엄 타이틀</h2>
+      </header>
+    </div>
+
+    <!-- more 버튼 클릭 시 -->
+    <div class="openMore activeBox">
+      <ul class="userOthers pointerCursor">
+        <li class="pt5_15 reportBtn">글 신고하기</li>
+        <li class="pt5_15 cancel">취소</li>
+      </ul>
+
+      <ul class="userMy pointerCursor">
+        <li class="pt5_15 modifyBtn">수정하기</li>
+        <li class="pt5_15 deleteBtn">삭제하기</li>
+        <li class="pt5_15 cancel">취소</li>
+      </ul>
+    </div>
+
+    <!-- 클릭 리스트 -->
+    <div class="listActive01">
+      <strong class="test">클릭 리스트</strong>
+
+      <ul class="listActBox flexBox">
+        <li class="pt5_14 act"><p>산후조리</p></li>
+        <li class="pt5_14"><p>처음박스</p></li>
+        <li class="pt5_14"><p>모유</p></li>
+      </ul>
+
+      <ul class="listActBox flexBox">
+        <li class="pt5_14 act"><p>산후조리</p></li>
+        <li class="pt5_14"><p>처음박스</p></li>
+        <li class="pt5_14"><p>모유</p></li>
+      </ul>
+    </div>
+    
+    <!-- 버튼 -->
+    <div class="button">
+      <strong class="test">버튼</strong>
+      
+      <!-- 폰트 크기 확인하기 -->
+      <div style="margin-bottom: 10px;">
+        <button class="pt6_16 mty_button01">텍스트</button>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+        <button class="pt6_16 mty_button02">텍스트</button>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+        <button class="pt6_16 mty_button03">텍스트</button>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+        <div class="mty_mix_button01 btnWrap">
+          <a href="javascript:;" class="pt6_16 cancel">취소</a>
+          <button class="pt6_16">제출하기</button>
+        </div>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+        <div class="mty_mix_button02 btnWrap">
+          <a href="javascript:;" class="pt6_16 cancel">취소</a>
+          <button class="pt6_16">제출하기</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 인풋 체크 박스 및 textarea -->
+    <div class="input">
+      <strong class="test">input</strong>
+
+      <form action="/test.jsp" name="communityWriting" method="post" class="inputBox">
+        <ul>
+          <li>
+            <input type="radio" name="report" id="report01" class="radioBox">
+            <label for="report01" class="pt4_14">중복/ 도배성 게시글 이예요</label>
+          </li>
+          <li>
+            <input type="checkbox" name="report" id="report02" class="checkboxBox1">
+            <label for="report02" class="pt4_14">중복/ 도배성 게시글 이예요</label>
+          </li>
+          <li>
+            <input type="checkbox" name="report" id="report03" class="checkboxBox2">
+            <label for="report03" class="pt4_14">중복/ 도배성 게시글 이예요</label>
+          </li>
+          <li>
+            <input type="radio" name="report" id="report07" checked>
+            <label for="report07" class="pt4_14">기타</label>
+            <div class="textareaBox textInput posi_rel">
+              <textarea name="report" for="report07" placeholder="기타 사유 내용을 입력해주세요"></textarea>
+              <div class="pt4_12 textCount posi_ab">0 / 200 자</div>
+            </div>
+          </li>
+        </ul>
+      </form>
+
+    </div>
+
+    <!-- link list -->
+    <div class="linkList">
+      <strong class="test">list</strong>
+
+      <ul class="linkList01 arrowList">
+
+        <li>
+          <a href="javascript:;" class="pt5_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt5_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt5_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+
+        <li class="pt5_14 noneList flexCenterBox">
+          등록된 내용이 없습니다.
+        </li>
+
+      </ul>
+
+      <ul class="linkList02">
+
+        <li>
+          <a href="javascript:;" class="pt4_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_14">
+            리스트 이름 한 줄 노출
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="linkList03">
+
+        <li>
+          <a href="javascript:;" class="pt4_15 textOverflow">
+            리스트 이름 한 줄 노출
+            <span class="pt4_12">2024.07.30</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 textOverflow">
+            리스트 이름 한 줄 노출
+            <span class="pt4_12">2024.07.30</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 textOverflow">
+            리스트 이름 한 줄 노출
+            <span class="pt4_12">2024.07.30</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="linkList04">
+
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">컨텐츠 제목 1줄을 노출 컨텐츠 제목 1줄을 노출</strong>
+              <p class="pt4_14 textOverflow">내용 1줄을 노출합니다. 내용 1줄을 노출 합니다.</p>
+              <span class="pt6_11">신청하러 가기</span>
+            </div>
+            <div class="iconBox">
+              <span class="like02 act"></span>
+              <p>99</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">컨텐츠 제목 1줄을 노출 컨텐츠 제목 1줄을 노출</strong>
+              <p class="pt4_14 textOverflow">내용 1줄을 노출합니다. 내용 1줄을 노출 합니다.</p>
+              <span class="pt6_11">신청하러 가기</span>
+            </div>
+            <div class="iconBox">
+              <span class="like02"></span>
+              <p>99</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">컨텐츠 제목 1줄을 노출 컨텐츠 제목 1줄을 노출</strong>
+              <p class="pt4_14 textOverflow">내용 1줄을 노출합니다. 내용 1줄을 노출 합니다.</p>
+              <span class="pt6_11">신청하러 가기</span>
+            </div>
+            <div class="iconBox">
+              <span class="like02"></span>
+              <p>99</p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="linkList05 linkList04 arrowList">
+
+        <li>
+          <a href="javascript:;" class="pt4_15">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">이름노출 멘토</strong>
+              <p class="pt4_14 textOverflow">서브 타이틀 1줄을 노출 서브 타이틀 1줄 노출</p>
+            </div>
+            <div class="iconBox">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">이름노출 멘토</strong>
+              <p class="pt4_14 textOverflow">서브 타이틀 1줄을 노출 서브 타이틀 1줄 노출</p>
+            </div>
+            <div class="iconBox">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15">
+            <img src="images/placeholder/area4.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt6_14 textOverflow">이름노출 멘토</strong>
+              <p class="pt4_14 textOverflow">서브 타이틀 1줄을 노출 서브 타이틀 1줄 노출</p>
+            </div>
+            <div class="iconBox">
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="linkList06">
+
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area5.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow2">컨텐츠 제목 2줄까지 노출할 수 있습니다.컨텐츠 제목 2줄까지 노출할 수 있습니다.</strong>
+              <div class="information flexBox">
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_view.png" alt="조회 아이콘">9,999</p>
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_comment.png" alt="댓글수 아이콘">9,999</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area5.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow2">컨텐츠 제목 2줄까지 노출할 수 있습니다.</strong>
+              <div class="information flexBox">
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_view.png" alt="조회 아이콘">9,999</p>
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_comment.png" alt="댓글수 아이콘">9,999</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="pt4_15 flexBox">
+            <img src="images/placeholder/area5.png" alt="임시이미지">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow2">컨텐츠 제목 2줄까지 노출할 수 있습니다.</strong>
+              <div class="information flexBox">
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_view.png" alt="조회 아이콘">9,999</p>
+                <p class="pt4_12 flexBox"><img src="images/iconBox/icon_etc_comment.png" alt="댓글수 아이콘">9,999</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="linkList07">
+
+        <li>
+          <a href="/community-detail.html">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow">100일이 되었어요. 뒤집기는 언제 하는 걸까요?</strong>
+              <p class="pt4_12">
+                <span>24.07.30</span>
+                <span>슈퍼케이예비맘</span>
+                <span>조회 999</span>
+              </p>
+            </div>
+            <img src="images/placeholder/img_placeholder01.jpg" alt="게시글 미리보기 이미지">
+          </a>
+        </li>
+
+        <li>
+          <a href="/community-detail.html">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow">100일이 되었어요. 뒤집기는 언제 하는 걸까요?</strong>
+              <p class="pt4_12">
+                <span>24.07.30</span>
+                <span>슈퍼케이예비맘</span>
+                <span>조회 999</span>
+              </p>
+            </div>
+            <img src="images/placeholder/img_placeholder01.jpg" alt="게시글 미리보기 이미지">
+          </a>
+        </li>
+
+        <li>
+          <a href="/community-detail.html">
+            <div class="textBox">
+              <strong class="pt5_15 textOverflow">100일이 되었어요. 뒤집기는 언제 하는 걸까요?</strong>
+              <p class="pt4_12">
+                <span>24.07.30</span>
+                <span>슈퍼케이예비맘</span>
+                <span>조회 999</span>
+              </p>
+            </div>
+            <img src="images/placeholder/img_placeholder01.jpg" alt="게시글 미리보기 이미지">
+          </a>
+        </li>
+
+      </ul>
+
+      <section class="tagSection">
+        <h3 class="pt5_15 flexBox">태그</h3>
+        <!-- class onList 제어 -->
+        <div class="tagBox onList">
+          <p class="noneTitle flexBox">등록된 태그가 없습니다.</p>
+          <ul class="pt4_14 tagList">
+            <li>#육아</li>
+            <li>#출산준비</li>
+            <li>#멘토리스쿨예비맘교실</li>
+            <li>#아이훈육</li>
+            <li>#데일리요가</li>
+            <li>#임신요통</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- contents -->
+    <div class="contents">
+      <strong class="test">contents</strong>
+
+      <a href="javascript:;" class="imgContents01">
+        <div class="imgBox">
+          <img src="images/placeholder/area.jpg" alt="임시 이미지">
+          <div class="iconimg">
+            <img src="images/iconBox/badge=1_try.png" alt="체험 아이콘">
+            <span class="like01 iconRb"></span>
+          </div>
+        </div>
+
+        <div class="textBox">
+          <strong class="pt6_20 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+          <p class="pt4_14 textOverflow2">
+            해당 내용을 2줄까지 노출합니다. 
+            2줄 이상의 내용은 말줄임 표시를 사용해서 
+            텍스트 영역에 더이상 노출되게 하지 않도록 합니다.
+          </p>
+        </div>
+      </a>
+
+      <a href="javascript:;" class="imgContents02">
+        <div class="imgBox">
+          <img src="images/placeholder/area2.png" alt="임시 이미지">
+          <div class="iconimg">
+            <span class="like01 iconRb"></span>
+          </div>
+        </div>
+
+        <div class="textBox">
+          <strong class="pt6_20 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+          <ul class="pt4_14 flexBox textOverflow">
+            <li>#태그1</li>
+            <li>#태그22</li>
+            <li>#태그333</li>
+          </ul>
+        </div>
+      </a>
+
+      <section class="section04 titleLarge">
+        <h2 class="pt6_17">당신을 위한 테마 상품이예요!</h2>
+
+        <ul class="itemWrap flexBox">
+
+          <li>
+            <a href="javascript:;">
+              <figure>
+                <img src="images/placeholder/img_thumbnail_large_1.png" alt="">
+                <figcaption>
+                  <p class="pt6_11">MOTHER-K</p>
+                  <dl>
+                    <dt class="pt4_14">베이직 고리세트(30P) 장난감/교구/소근육발달</dt>
+                    <dd class="flexBox">
+                      <strong class="pt7_16 flexCenterBox">9,700<em class="pt6_11">원</em></strong>
+                      <span class="pt4_11">15,000원</span>
+                    </dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <figure>
+                <img src="images/placeholder/img_thumbnail_large_1.png" alt="">
+                <figcaption>
+                  <p class="pt6_11">MOTHER-K</p>
+                  <dl>
+                    <dt class="pt4_14">베이직 고리세트(30P) 장난감/교구/소근육발달</dt>
+                    <dd class="flexBox">
+                      <strong class="pt7_16 flexCenterBox">9,700<em class="pt6_11">원</em></strong>
+                      <span class="pt4_11">15,000원</span>
+                    </dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <figure>
+                <img src="images/placeholder/img_thumbnail_large_1.png" alt="">
+                <figcaption>
+                  <p class="pt6_11">MOTHER-K</p>
+                  <dl>
+                    <dt class="pt4_14">베이직 고리세트(30P) 장난감/교구/소근육발달</dt>
+                    <dd class="flexBox">
+                      <strong class="pt7_16 flexCenterBox">9,700<em class="pt6_11">원</em></strong>
+                      <span class="pt4_11">15,000원</span>
+                    </dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <figure>
+                <img src="images/placeholder/img_thumbnail_large_1.png" alt="">
+                <figcaption>
+                  <p class="pt6_11">MOTHER-K</p>
+                  <dl>
+                    <dt class="pt4_14">베이직 고리세트(30P) 장난감/교구/소근육발달</dt>
+                    <dd class="flexBox">
+                      <strong class="pt7_16 flexCenterBox">9,700<em class="pt6_11">원</em></strong>
+                      <span class="pt4_11">15,000원</span>
+                    </dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+        </ul>
+        
+      </section>
+
+    </div>
+
+    <!-- slide contents -->
+    <div class="slideContents">
+      <strong class="test">swiper</strong>
+
+      <div class="swiper contents03Swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area.jpg" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="like01 iconRb"></span>
+                </div>
+              </div>
+              <div class="textBox">
+                <strong class="pt6_17 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+                <div class="pt4_14 flexBox">
+                  <p class="pt4_12">조회 <span>9,999</span></p>
+                  <p class="pt4_12">관심 <span>9,999</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area.jpg" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="like01 iconRb"></span>
+                </div>
+              </div>
+              <div class="textBox">
+                <strong class="pt6_17 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+                <div class="pt4_14 flexBox">
+                  <p class="pt4_12">조회 <span>9,999</span></p>
+                  <p class="pt4_12">관심 <span>9,999</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area.jpg" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="like01 iconRb"></span>
+                </div>
+              </div>
+              <div class="textBox">
+                <strong class="pt6_17 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+                <div class="pt4_14 flexBox">
+                  <p class="pt4_12">조회 <span>9,999</span></p>
+                  <p class="pt4_12">관심 <span>9,999</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area.jpg" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="like01 iconRb"></span>
+                </div>
+              </div>
+              <div class="textBox">
+                <strong class="pt6_17 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+                <div class="pt4_14 flexBox">
+                  <p class="pt4_12">조회 <span>9,999</span></p>
+                  <p class="pt4_12">관심 <span>9,999</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area.jpg" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="like01 iconRb"></span>
+                </div>
+              </div>
+              <div class="textBox">
+                <strong class="pt6_17 textOverflow">컨텐츠 제목 1줄을 노출합니다. 제목 1줄을 노출</strong>
+                <div class="pt4_14 flexBox">
+                  <p class="pt4_12">조회 <span>9,999</span></p>
+                  <p class="pt4_12">관심 <span>9,999</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="swiper contents04Swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area3.png" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="share01 iconRb"></span>
+                  <span class="pt4_12 playViews">9,999</span>
+                </div>
+              </div>
+              <div class="textBox">
+                <p class="pt4_12">#태그1</p>
+                <strong class="pt6_17 textOverflow2">컨텐츠 제목 2줄을 노출합니다. 컨텐츠 제목 2줄을 노출합니다.</strong>
+                <p class="pt4_12">관심 <span>9,999</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area3.png" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="share01 iconRb"></span>
+                  <span class="pt4_12 playViews">9,999</span>
+                </div>
+              </div>
+              <div class="textBox">
+                <p class="pt4_12">#태그1</p>
+                <strong class="pt6_17 textOverflow2">컨텐츠 제목 2줄을 노출합니다. 컨텐츠 제목 2줄을 노출합니다.</strong>
+                <p class="pt4_12">관심 <span>9,999</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area3.png" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="share01 iconRb"></span>
+                  <span class="pt4_12 playViews">9,999</span>
+                </div>
+              </div>
+              <div class="textBox">
+                <p class="pt4_12">#태그1</p>
+                <strong class="pt6_17 textOverflow2">컨텐츠 제목 2줄을 노출합니다. 컨텐츠 제목 2줄을 노출합니다.</strong>
+                <p class="pt4_12">관심 <span>9,999</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area3.png" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="share01 iconRb"></span>
+                  <span class="pt4_12 playViews">9,999</span>
+                </div>
+              </div>
+              <div class="textBox">
+                <p class="pt4_12">#태그1</p>
+                <strong class="pt6_17 textOverflow2">컨텐츠 제목 2줄을 노출합니다. 컨텐츠 제목 2줄을 노출합니다.</strong>
+                <p class="pt4_12">관심 <span>9,999</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;" class="imgContents01">
+              <div class="imgBox">
+                <img src="images/placeholder/area3.png" alt="임시 이미지">
+                <div class="iconimg">
+                  <span class="share01 iconRb"></span>
+                  <span class="pt4_12 playViews">9,999</span>
+                </div>
+              </div>
+              <div class="textBox">
+                <p class="pt4_12">#태그1</p>
+                <strong class="pt6_17 textOverflow2">컨텐츠 제목 2줄을 노출합니다. 컨텐츠 제목 2줄을 노출합니다.</strong>
+                <p class="pt4_12">관심 <span>9,999</span></p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

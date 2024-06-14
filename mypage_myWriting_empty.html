@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+    <div class="apply wrap">
+        <header class="title01 posi_rel">
+            <div class="backBox posi_ab">
+            <a href="javascript:;"><img src="images/iconBox/btn_back.png" alt="닫기 아이콘"></a>
+            </div>
+            <div class="headBox">
+            <h1 class="pt6_17 flexCenterBox">나의 커뮤니티</h1>
+            </div>
+        </header>
+        <div class="pageWrap">
+            <div class="textSlide">
+                <div class="swiper topSwiper">
+                  <ul class="swiper-wrapper listActBox1 tabs">
+                    <li class="swiper-slide act tab-link current" data-tab="tab-1">내가 쓴 글</li>
+                    <li class="swiper-slide tab-link" data-tab="tab-2">내가 쓴 댓글</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="state flexBox">
+                <span class="numBox pt5_14"><span class="number">0</span>개</span>
+                <div class="menuBox flexBox posi_rel">
+                    <span class="pt4_12">전체</span>
+                    <img src="./images/arrowBox/updown_3=down_3.png" />
+                    <ul class="posi_ab">
+                        <li><a href="#" class="on pt4_14">전체</a></li>
+                        <li><a href="#" class="pt4_14">나의 베동</a></li>
+                        <li><a href="#" class="pt4_14">2024년 4월 베동</a></li>
+                        <li><a href="#" class="pt4_14">서포터즈 7기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="myWriting tab-content current empty" id="tab-1">
+                <img src="./images/iconBox/icon_noneTitle.png" alt="no contents" />
+                <p class="empty pt4_14">'내가 쓴 글'이 없어요</p>
+            </div>
+            <div class="myWriting tab-content empty" id="tab-2">
+                <img src="./images/iconBox/icon_noneTitle.png" alt="no contents" />
+                <p class="empty pt4_14">'내가 쓴 댓글'이 없어요</p>
+            </div>
+        </div> 
+    
+    </div>
+</body>
+</html>

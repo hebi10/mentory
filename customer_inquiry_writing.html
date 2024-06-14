@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멘토리</title>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- css, js -->
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+</head>
+<body>
+  
+
+  <header class="customer_inquiry_head posi_rel title01">
+    <div class="headBox">
+      <h1 class="pt6_17 flexCenterBox">체험 신청</h1>
+    </div>
+    <div class="moreBox posi_ab pointerCursor">
+      <a href="javascript:history.back();"><img src="images/iconBox/btn_close.png" alt="닫기 아이콘"></a>
+    </div>
+  </header>
+
+  <div class="wrap customer_inquiry_answer">
+    
+    <div class="customer_inquiry_writing writingWrap posi_rel">
+      <h2 class="pt4_12 pointerCursor"></h2>
+      <ul class="pointerCursor posi_ab">
+        <li>이용 문의 <img src="images/arrowBox/icon_arrow.png" alt="화살표"></li>
+        <li>이용 문의</li>
+        <li>서비스 문의</li>
+        <li>상품 문의</li>
+      </ul>
+    </div>
+
+    <div class="userInformation">
+      <ul>
+        <li class="flexBox">
+          <em>닉네임</em>
+          <p>홍길동</p>
+        </li>
+        <li class="flexBox">
+          <em>이메일</em>
+          <p>superkmom@mentory.co.kr</p>
+        </li>
+      </ul>
+    </div>
+
+
+    <form action="/test.jsp" name="communityWriting" method="post">
+      <input type="hidden" name="notice-board" value="전체 베동">
+
+      <input type="text" class="pt4_15 input01" placeholder="제목을 입력해주세요.">
+      <div class="textBox posi_rel">
+        <textarea class="pt4_15 textInput" placeholder="함께 하고 싶은 내용을 입력해주세요."></textarea>
+        <div class="pt4_12 textCount posi_ab">0 / 1,000 자</div>
+      </div>
+
+      <div class="imgFileBox">
+        <div class="form_input_file_wrap flexBox">
+          <input class="form_input_file" id="upload1" type="file">
+          <label for="upload1" class="pt4_14">첨부파일</label>
+          <div class="file-list"></div>
+        </div>
+        <ul>
+          <li class="pt4_11">이미지 파일만 첨부 가능 (확장자 jpg,jpeg,png,bmp)</li>
+          <li class="pt4_11">파일 크기가 10MB미만인 경우만 업로드 가능합니다.</li>
+          <li class="pt4_11">문의사항은 1,000자 이내로 입력 가능합니다. (공백포함)</li>
+        </ul>
+      </div>
+
+      <ul class="caution inputBox">
+        <li>
+          <input type="checkbox" name="report" id="report01" class="checkboxBox1">
+          <label for="report01" class="pt4_14">답변완료 이메일 알람</label>
+        </li>
+        <li>
+          <input type="checkbox" name="report" id="report02" class="checkboxBox1">
+          <label for="report02" class="pt4_14">답변완료 문자 알람</label>
+        </li>
+      </ul>
+
+      <button class="pt6_16 mty_button01">등록하기</button>
+  </form>
+    
+  </div>
+
+</body>
+</html>
